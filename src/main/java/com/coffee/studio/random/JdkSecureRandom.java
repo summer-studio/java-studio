@@ -15,4 +15,24 @@ public class JdkSecureRandom {
             return 0;
         }
     }
+
+    public int getRandomSha1rng() {
+        try {
+            Random random = SecureRandom.getInstance("SHA1PRNG");
+            return random.nextInt();
+        } catch (NoSuchAlgorithmException ex) {
+            ex.printStackTrace();
+            return 0;
+        }
+    }
+
+    public int getRandomNativePRNG() {
+        try {
+            Random random = SecureRandom.getInstance("NativePRNG");
+            return random.nextInt();
+        } catch (NoSuchAlgorithmException ex) {
+            ex.printStackTrace();
+            return 0;
+        }
+    }
 }
