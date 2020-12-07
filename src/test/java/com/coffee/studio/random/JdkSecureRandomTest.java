@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class JdkSecureRandomTest {
 
-    private JdkSecureRandom jdkSecureRandom = new JdkSecureRandom();
+    private final JdkSecureRandom jdkSecureRandom = new JdkSecureRandom();
 
     @Test
     public void getRandom() {

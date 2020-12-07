@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class JdkThreadLocalRandomTest {
 
-    private JdkThreadLocalRandom jdkThreadLocalRandom = new JdkThreadLocalRandom();
+    private final JdkThreadLocalRandom jdkThreadLocalRandom = new JdkThreadLocalRandom();
 
     @Test
     public void getRandom() {
