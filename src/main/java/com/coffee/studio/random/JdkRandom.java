@@ -3,6 +3,7 @@ package com.coffee.studio.random;
 import java.util.Random;
 
 public class JdkRandom {
+
     private static final Random RANDOM1 = new Random(10000);
     private static final Random RANDOM2 = new Random(10000);
 

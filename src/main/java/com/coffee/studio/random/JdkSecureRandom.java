@@ -4,6 +4,9 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Random;
 
+/**
+ * JDK 随机函数
+ */
 public class JdkSecureRandom {
 
     public int getRandom() {
