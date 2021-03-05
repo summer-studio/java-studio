@@ -12,7 +12,7 @@ public class JdkMapTest {
 
     private static final int LOOP_COUNT = 20;
 
-    private static final int LIST_SIZE = 1000000;
+    private static final int LIST_SIZE = 10000000;
 
     @Test
     public void list2MapWithoutInitialCapacity() {
