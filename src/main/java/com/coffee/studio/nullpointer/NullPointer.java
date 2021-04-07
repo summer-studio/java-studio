@@ -1,5 +1,7 @@
 package com.coffee.studio.nullpointer;
 
+import com.coffee.studio.model.User;
+
 public class NullPointer {
 
     /**
@@ -12,5 +14,14 @@ public class NullPointer {
         Integer target = null;
         boolean success = value > target;
         return success;
+    }
+
+    public void equals() {
+        User user = new User();
+        if (user.getUserId() == 1) {
+            System.out.println("success");
+        } else {
+            System.out.println("fail");
+        }
     }
 }

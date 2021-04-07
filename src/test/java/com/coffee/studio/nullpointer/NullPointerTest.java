@@ -11,4 +11,9 @@ public class NullPointerTest {
         boolean success = nullPointer.valueCompareToNull();
         System.out.println(success);
     }
+
+    @Test
+    public void equals() {
+        nullPointer.equals();
+    }
 }
