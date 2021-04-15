@@ -35,4 +35,13 @@ public class User implements Serializable {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", username='" + username + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }
